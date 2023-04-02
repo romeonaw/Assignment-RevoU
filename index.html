@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RevoU-Assignment Segitiga</title>
+    <link rel="stylesheet" type="text/css" href="Assets/CSS/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <!--INI HEADER-->
+    <header>
+      <h1>Welcome to Katik</h1>
+      <p>Hai Sobat, Selamat datang di Katik :]</p>
+      <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+    </header>
+
+    <!-- INI UNTUK NAVBAR-->
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Segitiga</a></li>
+        <li><a href="jajargenjang.html">Jajargenjang</a></li>
+      </ul>
+    </nav>
+    <!--Untuk MAIN LUAS-->
+    <main>
+        <h1 id="title">Luas Segitiga</h1>
+        <img  class="img-triangle" style="display: block; margin: auto;" src="Assets/Img/gambar segitiga.jpeg" alt="Gambar segitiga">
+        <p>Rumus Luas Segitiga yaitu: </p>
+        <p class="rumus">L =1/2 x a x t</p>
+        <p>Dimana :</p>
+        <p>L =Luas</p>
+        <p>a = Panjang alas</p>
+        <p>t = Tinggi</p>
+        <hr>
+            <h1 align="center">Hitung Luas Segitiga</h1>
+            <form action="" method="GET" >
+              <label for="alas">Alas:</label>
+              <input type="number" placeholder="Masukkan nilai alasnya" id="alas" name="alas">
+              <label for="tinggi" >Tinggi:</label>
+              <input type="number" placeholder="Masukkan nilai tingginya" id="tinggi" name="tinggi">
+              <p id="rumus"></p>
+              <p id="angka"></p>
+              <p id="hasil"></p>
+              <input  type="button" value="Hitung" onclick="hitungLuas()">
+              <input type="reset" value="Reset"onclick="resetForm()">
+            </form>
+            
+    </main>
+     <!--Untuk MAIN KELILING-->
+     <main>
+        
+        <h1 id="title">Keliling Segitiga</h1>
+        <img  class="img-triangle"  src="Assets/Img//gambar segitiga.jpeg" alt="Gambar segitiga">
+        <p>Rumus Keliling Segitiga yaitu: </p>
+        <p class="rumus">K =S1 + S2 +S3</p>
+        <p>Dimana :</p>
+        <p>K = Keliling</p>
+        <p>S1 = Sisi A</p>
+        <p>S2 = Sisi B</p>
+        <P>S3 = Sisi C</P>
+        <hr>
+            <h1 align="center"> Hitung Keliling Segitiga</h1>
+            <form>
+              <label for="sisi a">Sisi A</label>
+              <input type="number" placeholder="Masukkan nilai sisi a" id="sisi-a" name="sisi-a">
+              <label for="sisi-b">Sisi B</label>
+              <input type="number" placeholder="Masukkan nilai sisi b" id="sisi-b" name="sisi-b">
+              <label for="sisi-c">Sisi C</label>
+              <input type="number" placeholder="Masukkan nilai sisi c" id="sisi-c" name="sisi-c">
+              <p id="rumus2"></p>
+              <p id="angka2"></p>
+              <p id="hasil2"></p>
+              <input type="button" value="Hitung" onclick="hitungKeliling()">
+              <input type="reset" value="Reset" onclick="resetForm()">
+            </form>
+    </main>
+    <hr>
+    <!-- INI FOOTER-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>About Me</h3>
+            <p class="about-me"> JUST ORDINARY PEOPLE</p>
+          </div>
+          <div class="col-md-3">
+            <h3>Contact Me</h3>
+            <ul class="contact">
+              <li><i class="fa fa-map-marker"></i> PURBALINGGA,JAWA TENGAH</li>
+              <li><i class="fa fa-phone"></i>088228893938</li>
+              <li><i class="fa fa-envelope"></i>arifwicaksonopbg@gmail.com</li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3>Follow Me</h3>
+            <ul class="social-media">
+              <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+              <li><a href="#"><i class="fa-brands fa-github"></i> Github</a></li>
+              <li><a href="#"><i class="fa-brands fa-discord"></i> Discord</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="credits">
+        <p>&copy; 2023 by Arif</p>
+      </div>
+    </footer>    
+    <script src="Assets/JS/index.js"></script>
+  </body>
+</html>
